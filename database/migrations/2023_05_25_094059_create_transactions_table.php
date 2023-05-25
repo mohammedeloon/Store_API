@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedInteger('quentity');
+            $table->foreignId('buyer_id')->nullable()->constrained('users' , 'id')->nullOnDelete();
+            $table->foreignId('product_id')->nullable()->constrained('products' , 'id')->nullOnDelete();
         });
     }
 
