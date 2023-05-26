@@ -16,6 +16,8 @@ class User extends Authenticatable
     const UNVERIFIED_USER = '0';
     const ADMIN_USER = 'true';
     const REGULAR_USER = 'false';
+
+    protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
@@ -56,11 +58,11 @@ class User extends Authenticatable
     }
 
     public function isVerified(){
-        return $this->vverified == User::VERIFIED_USER;
+        return $this->verified == User::VERIFIED_USER;
     }
 
     public static function generateVerificationCode(){
-        return random_bytes(40);
+        return bin2hex(random_bytes(40));
     }
 
 }

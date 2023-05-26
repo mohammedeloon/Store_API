@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->unsignedInteger('quantity');
             $table->string('status')->default(Product::UNAVAILABLE_PRODUCT);
+            $table->string('image');
             $table->foreignId('seller_id')->nullable()->constrained('users' , 'id')->nullOnDelete();
             $table->timestamps();
         });
