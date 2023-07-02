@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Product;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 
-class ProductController extends Controller
+class ProductController extends ApiController
 {
     /**
      * Display a listing of the resource.

@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Category;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use App\Models\Category;
 
-class CategoryController extends Controller
+class CategoryController extends ApiController
 {
     /**
      * Display a listing of the resource.

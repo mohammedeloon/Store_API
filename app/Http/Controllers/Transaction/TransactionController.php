@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Transaction;
 
 use App\Http\Requests\StoreTransactionRequest;
 use App\Http\Requests\UpdateTransactionRequest;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 use App\Models\Transaction;
 
-class TransactionController extends Controller
+class TransactionController extends ApiController
 {
     /**
      * Display a listing of the resource.
