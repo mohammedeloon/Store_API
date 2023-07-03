@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Traits\ApiResponser;
+use App\Http\Traits\ApiResponser;
 use Illuminate\Http\Request;
 
 

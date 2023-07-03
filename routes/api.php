@@ -55,3 +55,4 @@ Route::apiResource('products' , ProductController::class , ['only' => ['index' ,
  */
 Route::apiResource('transactions' , TransactionController::class , ['only' => ['index' , 'show']]);
 
+ 
